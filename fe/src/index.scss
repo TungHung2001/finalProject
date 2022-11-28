@@ -1,0 +1,415 @@
+body,
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.field {
+  .error-msg {
+    border: none !important;
+    padding-left: 0 !important;
+  }
+}
+
+.--table {
+  img {
+    max-height: 64px;
+    max-width: 100px;
+    display: inline-block !important;
+  }
+}
+
+.checkbox-group {
+  display: block;
+
+  .checkbox {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.post-item {
+  margin-bottom: 10px;
+
+  img {
+    width: 250px;
+    height: 155px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  &.--small {
+    img {
+      width: 64px;
+      height: 48px;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.main {
+  padding-top: 68px;
+  min-height: calc(100vh - 238px);
+}
+
+.app-body-wrapper {
+  background: #fff;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+body:has(.post-detail-page),
+.app-body-wrapper:has(.post-detail-page) {
+  background: #f0f1f5;
+}
+
+.w1160 {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.w1040 {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+
+  &.justify-content-space-between {
+    justify-content: space-between;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.admin-nav {
+  padding-top: 46px;
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+
+  .ui.vertical.menu {
+    width: 100%;
+  }
+}
+
+.load-more-button {
+  margin: 30px auto 65px;
+  height: 40px;
+  width: 420px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+  span {
+    font-size: 13px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app-footer {
+  background: #1b1c1d;
+  border-top: 3px solid #ed2e2e;
+  color: #fff;
+  text-align: center;
+
+  .content {
+    text-align: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 400px;
+
+    .title {
+      margin-bottom: 12px;
+      font-size: 28px;
+      letter-spacing: 1.6px;
+    }
+
+    .slogan {
+      line-height: 22px;
+    }
+  }
+
+  .footer-bottom {
+    background: rgb(10, 10, 10);
+    padding: 10px 0;
+  }
+}
+
+.a-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-post-label {
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eef4f9;
+
+  span {
+    font-size: 15px; // h3
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #111;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 600;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #c90000;
+    }
+  }
+}
+
+.login-form-wrapper {
+  max-width: 450px;
+  margin: auto;
+}
+
+h1.app-post-label {
+  span {
+    font-size: 24px;
+  }
+}
+
+.main-nav {
+  .item {
+    &.category-item, &.nav-home-page {
+      text-transform: uppercase !important;
+    }
+
+    &:before {
+      display: none !important;
+    }
+  }
+}
+
+.nav-home-page {
+  font-size: 24px;
+  font-weight: normal !important;
+  padding-left: 0 !important;
+
+  &.active, &:hover {
+    background: none !important;
+  }
+}
+
+.search-box {
+  position: relative;
+  margin-right: 15px;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  width: 40px;
+  transition: width ease-in-out 0.15s;
+
+  &.open {
+    width: 150px;
+  }
+
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    color: #000000;
+    pointer-events: none;
+
+    &.close {
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+}
+
+.login-form {
+  padding-top: 40px;
+}
+
+.validate-password {
+  padding-bottom: 30px;
+  .rule-item {
+    &.pass {
+      .icon {
+        color: green;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .visible-mobile {
+    display: flex !important;
+  }
+  .hidden-mobile {
+    display: none !important;
+  }
+  .nav-home-page {
+    &.active {
+      background: none !important;
+    }
+  }
+  .admin-page {
+    table {
+      th {
+        text-align: center !important;
+      }
+    }
+  }
+  .login-form {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-pc {
+    display: none !important;
+  }
+}
+
+.mobile-menu {
+  display: block;
+
+  .mobile-menu-backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .mobile-menu-content {
+    position: fixed;
+    top: 0;
+    left: -211px;
+    bottom: 0;
+    width: 210px;
+    z-index: 100001;
+    background: #000000;
+    transition: left ease-in-out 300ms;
+
+    .website-name {
+      font-size: 22px;
+      color: #ffffff;
+      padding: 20px 10px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    a {
+      display: block !important;
+      color: #ffffff;
+      padding: 10px;
+      border-bottom: 1px solid #111111;
+      font-size: 16px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.open {
+    .mobile-menu-backdrop {
+      display: block;
+    }
+
+    .mobile-menu-content {
+      left: 0;
+    }
+  }
+}

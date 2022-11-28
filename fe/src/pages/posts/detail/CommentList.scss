@@ -1,0 +1,21 @@
+.comment-list {
+  .ui.comments {
+    max-width: 100%;
+  }
+  .has-error {
+    .text, .author {
+      opacity: 0.5;
+    }
+  }
+  .has-error-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 11px;
+    border-radius: 7px;
+    line-height: 14px;
+    text-align: center;
+    background: orange;
+    user-select: none;
+  }
+}

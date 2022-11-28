@@ -1,0 +1,141 @@
+.post-item {
+  .thumbnail {
+    display: block;
+    margin-bottom: 10px;
+
+    i {
+      width: 100%;
+      padding-top: 62.4%;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-sizing: border-box;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+
+  .type {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #aaa;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .title a {
+    color: #111;
+    display: block;
+    line-height: 140%;
+    font-size: 17px;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #666;
+    }
+  }
+
+  &[data-type="big-thumb"] {
+    margin-bottom: 25px;
+
+    .title a {
+      font-size: 22px;
+    }
+  }
+
+  &[data-type="mid-thumb"] {
+    .thumbnail {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+
+  &[data-type="small-thumb"] {
+    .thumbnail {
+      width: 80px;
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+
+    .title a {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 14px;
+    }
+  }
+}
+
+.post-item-d-flex {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  .thumb {
+    display: block;
+    width: 280px;
+    border-radius: 4px;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    i {
+      width: 100%;
+      padding-top: 62.4%;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-sizing: border-box;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+
+  .type {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #aaa;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .title a {
+    color: #333;
+    display: block;
+    line-height: 140%;
+    font-size: 22px;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #666;
+    }
+  }
+
+  .intro,
+  .created-time {
+    display: block;
+  }
+
+  .intro {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #888;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+
+  .created-time {
+    margin-bottom: 10px;
+    color: #8e8e8e;
+  }
+}
